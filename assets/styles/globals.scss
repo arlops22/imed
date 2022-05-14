@@ -1,0 +1,51 @@
+@import './colors.scss', './bootstrap/bootstrap.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: $brand_color_secondary;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*, button, input {
+  border: none;
+  background: none;
+  outline: none;
+
+  color: $brand_color_black;
+}
+
+.back-btn {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  transition: color 0.15s ease;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    path {
+      fill: $brand_color_black;
+      transition: color 0.15s ease;
+    }
+  }
+
+  &:hover {
+    color: $brand_color;
+
+    svg path {
+      fill: $brand_color;
+    }
+  }
+}
