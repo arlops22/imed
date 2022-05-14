@@ -9,13 +9,13 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>imed</title>
+        <title>fastmed</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          imed
+          fastmed
         </h1>
 
         <div className={styles.grid}>
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
 
       <footer className={styles.footer}>
         <p>
-          Grupo: Ary de Souza Lopes & Bernardo Cerqueira
+          Grupo: Ary de Souza Lopes & Bernardo de Castro Cerqueira
         </p>
       </footer>
     </div>

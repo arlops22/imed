@@ -18,7 +18,7 @@ const Intro: NextPage = () => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>imed</title>
+                <title>fastmed</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
