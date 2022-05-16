@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import LinkCard from '../components/link-card'
 
-import styles from '../assets/styles/pages/Intro.module.scss'
+import styles from '../assets/styles/pages/defaultPages.module.scss'
 
 const Intro: NextPage = () => {
     const router = useRouter()
@@ -30,7 +30,29 @@ const Intro: NextPage = () => {
                 <h1 className={styles.title}>
                     Introdução
                 </h1>
-                <p>Definição da design challenge e metas de design definidas.</p>
+
+                <div className={styles.infoContainer}>
+                    <h3>Definição do Design Challenge</h3>
+                    <p>Como nós podemos ajudar as pessoas em geral a não passarem por dificuldades na busca e compra de remédios de forma que consigam encontrar rapidamente o que procuram?</p>
+                </div>
+                
+                <div className={styles.infoContainer}>
+                    <h3>Metas de Design</h3>
+                    <ul>
+                        <li>
+                            <p>Segurança no uso da informação (credibilidade)</p>
+                        </li>
+                        <li>
+                            <p>Eficiência</p>
+                        </li>
+                        <li>
+                            <p>Acessibilidade</p>
+                        </li>
+                        <li>
+                            <p>Facilidade de aprendizado</p>
+                        </li>
+                    </ul>
+                </div>
             </main>
 
             <div className={styles.nextPage}>

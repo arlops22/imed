@@ -2,9 +2,7 @@ import type { NextPage } from 'next'
 import { useRouter } from "next/router"
 import Head from 'next/head'
 
-import LinkCard from '../components/link-card'
-
-import styles from '../assets/styles/pages/Intro.module.scss'
+import styles from '../assets/styles/pages/defaultPages.module.scss'
 
 const Intro: NextPage = () => {
     const router = useRouter()

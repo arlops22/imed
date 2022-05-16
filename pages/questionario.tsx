@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import LinkCard from '../components/link-card'
 
-import styles from '../assets/styles/pages/Intro.module.scss'
+import styles from '../assets/styles/pages/defaultPages.module.scss'
 
 const Intro: NextPage = () => {
     const router = useRouter()
@@ -30,7 +30,7 @@ const Intro: NextPage = () => {
                 <h1 className={styles.title}>
                     Questionário
                 </h1>
-                <p>Definição da design challenge e metas de design definidas.</p>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefbjM_18mOtRA2BBbwFQEPUPBNDjoVktxbutYcxwk4erF1kQ/viewform?embedded=true" width="640" height="850">Carregando…</iframe>
             </main>
 
             <div className={styles.nextPage}>

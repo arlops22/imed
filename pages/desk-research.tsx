@@ -1,10 +1,12 @@
 import type { NextPage } from 'next'
 import { useRouter } from "next/router"
 import Head from 'next/head'
+import Image from 'next/image'
 
 import LinkCard from '../components/link-card'
 
-import styles from '../assets/styles/pages/Intro.module.scss'
+import styles from '../assets/styles/pages/defaultPages.module.scss'
+import deskResearchImg from '../assets/images/deskresearch.jpg'
 
 const Intro: NextPage = () => {
     const router = useRouter()
@@ -30,7 +32,13 @@ const Intro: NextPage = () => {
                 <h1 className={styles.title}>
                     Desk Research
                 </h1>
-                <p>Definição da design challenge e metas de design definidas.</p>
+                <Image
+                    // loader={myLoader}
+                    className={styles.deskImage}
+                    src={deskResearchImg}
+                    alt="Imagem da desk research"
+                    height={650}
+                />
             </main>
 
             <div className={styles.nextPage}>

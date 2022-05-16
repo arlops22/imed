@@ -4,7 +4,8 @@ import Head from 'next/head'
 
 import LinkCard from '../components/link-card'
 
-import styles from '../assets/styles/pages/Intro.module.scss'
+import styles from '../assets/styles/pages/defaultPages.module.scss'
+import EnterpriseInfoSection from '../components/enterprise-info-section'
 
 const Intro: NextPage = () => {
     const router = useRouter()
@@ -30,7 +31,26 @@ const Intro: NextPage = () => {
                 <h1 className={styles.title}>
                     Análise Competitiva
                 </h1>
-                <p>Definição da design challenge e metas de design definidas.</p>
+                <EnterpriseInfoSection 
+                    // logoSource={}
+                    name="IFood"
+                    localization="Brasil"
+                    size={5539}
+                    description="iFood é uma empresa brasileira fundada em 2011, atuante no ramo de entrega de restaurantes, mercados, bebidas e farmácia pela internet."
+                    positivePoints={[
+                        "Sistema de entregas com localização em tempo real do entregador.",
+                        "Design de aplicativo visualmente agradável",
+                        "Eficiente.",
+                        "Interface intuitiva e fácil de mexer (utilização de filtros, busca fácil de produtos).",
+                        "Apresenta descontos em produtos.",
+                        "Chat online.",
+                        "Lista de últimos pedidos é de fácil acesso."                        
+                    ]}
+                    negativePoints={[
+
+                    ]}
+                    // appSource={}           
+                />
             </main>
 
             <div className={styles.nextPage}>
@@ -42,7 +62,7 @@ const Intro: NextPage = () => {
             </div>
             <footer className={styles.footer}>
                 <p>
-                Grupo: Ary de Souza Lopes & Bernardo Cerqueira
+                    Grupo: Ary de Souza Lopes & Bernardo Cerqueira
                 </p>
             </footer>
         </div>
