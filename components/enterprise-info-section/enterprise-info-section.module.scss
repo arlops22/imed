@@ -3,5 +3,25 @@
 .container {
     h3 {
         font-size: 22px;
+        margin-bottom: 16px;
     }
+
+    .infoContent {
+        padding: 20px 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: 32px;
+    }
+}
+
+.logoImg {
+    object-fit: cover;
+}
+
+.appImage {
+    object-fit: contain;
 }

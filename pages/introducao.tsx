@@ -32,6 +32,11 @@ const Intro: NextPage = () => {
                 </h1>
 
                 <div className={styles.infoContainer}>
+                    <h3>Participantes</h3>
+                    <p>Ary de Souza Lopes e Bernardo de Castro Cerqueira</p>
+                </div>
+
+                <div className={styles.infoContainer}>
                     <h3>Definição do Design Challenge</h3>
                     <p>Como nós podemos ajudar as pessoas em geral a não passarem por dificuldades na busca e compra de remédios de forma que consigam encontrar rapidamente o que procuram?</p>
                 </div>
@@ -64,7 +69,7 @@ const Intro: NextPage = () => {
             </div>
             <footer className={styles.footer}>
                 <p>
-                Grupo: Ary de Souza Lopes & Bernardo Cerqueira
+                    Grupo: Ary de Souza Lopes & Bernardo de Castro Cerqueira
                 </p>
             </footer>
         </div>

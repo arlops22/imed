@@ -50,7 +50,7 @@ const Intro: NextPage = () => {
             </div>
             <footer className={styles.footer}>
                 <p>
-                Grupo: Ary de Souza Lopes & Bernardo Cerqueira
+                Grupo: Ary de Souza Lopes & Bernardo de Castro Cerqueira
                 </p>
             </footer>
         </div>

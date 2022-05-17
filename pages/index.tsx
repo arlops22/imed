@@ -31,17 +31,17 @@ const Home: NextPage = () => {
           />
           <LinkCard 
             title='Análise Competitiva'
-            description='Definição da design challenge e metas de design definidas.'
+            description='Análise de empresas concorrentes.'
             link='/analise-competitiva'
           />
           <LinkCard 
             title='Questionário'
-            description='Definição da design challenge e metas de design definidas.'
+            description='Coletas rápidas de dados de muitos usuários.'
             link='/questionario'
           />
           <LinkCard 
             title='Entrevista'
-            description='Definição da design challenge e metas de design definidas.'
+            description='Coletas de informações detalhadas e profundas de usuários individuais.'
             link='/entrevista'
           />
         </div>
