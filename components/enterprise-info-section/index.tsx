@@ -31,7 +31,7 @@ const EnterpriseInfoSection = (props: EnterpriseInfoSectionProps) => {
                 <h3>Informação da Empresa</h3>
                 <p><strong>Nome: </strong>{name}</p>
                 <p><strong>Localização: </strong>{localization}</p>
-                <p><strong>Tamanho da empresa: </strong>{size}</p>
+                <p><strong>Tamanho da empresa: </strong>{size} funcionários</p>
             </div>
 
             <div className={styles.infoContent}>

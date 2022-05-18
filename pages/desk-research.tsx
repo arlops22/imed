@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import { useRouter } from "next/router"
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import LinkCard from '../components/link-card'
 
@@ -17,6 +18,12 @@ const Intro: NextPage = () => {
         </svg>
     )
 
+    const home_icon = (
+        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.58332 19.1667V13.4167H13.4167V19.1667H18.2083V11.5H21.0833L11.5 2.875L1.91666 11.5H4.79166V19.1667H9.58332Z" fill="black"/>
+        </svg>
+    )
+
     return (
         <div className={styles.container}>
             <Head>
@@ -25,10 +32,18 @@ const Intro: NextPage = () => {
             </Head>
 
             <main className={styles.main}>
-                <button className="back-btn" onClick={() => router.back()}>
-                    {back_icon}
-                    Voltar
-                </button>
+                <div className="nav-container d-flex flex-column">
+                    <Link href="/">
+                        <a className="back-btn">
+                            {home_icon}
+                            Home
+                        </a>
+                    </Link>
+                    <button className="back-btn" onClick={() => router.back()}>
+                        {back_icon}
+                        Voltar
+                    </button>
+                </div>
                 <h1 className={styles.title}>
                     Desk Research
                 </h1>

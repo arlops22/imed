@@ -26,15 +26,20 @@ a {
   color: $brand_color_black;
 }
 
-.back-btn {
+.nav-container {
   position: absolute;
   top: 40px;
   left: 40px;
+}
+
+.back-btn {
   transition: color 0.15s ease;
+  padding: 0;
 
   svg {
     width: 24px;
     height: 24px;
+    margin-right: 12px;
     path {
       fill: $brand_color_black;
       transition: color 0.15s ease;
