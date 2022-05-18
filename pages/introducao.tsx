@@ -74,7 +74,7 @@ const Intro: NextPage = () => {
                     </ul>
                 </div>
 
-                <div className={styles.infoContainer}>
+                {/* <div className={styles.infoContainer}>
                     <h4>Processo e Estratégia de Design</h4>
                     <ul>
                         <li>
@@ -84,7 +84,7 @@ const Intro: NextPage = () => {
                             <p>Dirigida ao problema</p>
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </main>
 
             <div className={styles.nextPage}>
