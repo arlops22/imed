@@ -5,6 +5,9 @@ import LinkCard from '../components/link-card'
 
 import styles from '../assets/styles/pages/Home.module.scss'
 
+// PERSONAS
+// https://docs.google.com/document/d/1zpv4jiHUYBAAdkxXQNUtZjEfvHssRn0iCiEX7utAoFU/edit
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -17,41 +20,32 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           fastmed
         </h1>
-
         <div className={styles.grid}>
-          <LinkCard 
-            title='Introdução'
-            description='Definição da design challenge e metas de design definidas.'
-            link='/introducao'
-          />
-          <LinkCard 
-            title='Desk Research'
-            description='Certezas, suposições e dúvidas sobre o tema.'
-            link='/desk-research'
-          />
-          <LinkCard 
-            title='Análise Competitiva'
-            description='Análise de empresas concorrentes.'
-            link='/analise-competitiva'
-          />
-          <LinkCard 
-            title='Questionário'
-            description='Coletas rápidas de dados de muitos usuários.'
-            link='/questionario'
-          />
-          <LinkCard 
-            title='Entrevista'
-            description='Coletas de informações detalhadas e profundas de usuários individuais.'
-            link='/entrevista'
-          />
+          <div className="row">
+            <div className="col-md-4">
+              <LinkCard 
+                title='Inspiração'
+                description='Análise da situação atual.'
+                link='/inspiracao'
+              />
+            </div>
+            <div className="col-md-4">
+            <LinkCard 
+              title='Ideação'
+              description='Síntese e prototipação.'
+              link='/ideacao'
+            />
+            </div>
+            <div className="col-md-4">
+            <LinkCard 
+              title='Avaliação'
+              description='Em breve.'
+              link='/'
+            />
+            </div>
+          </div>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <p>
-          Grupo: Ary de Souza Lopes & Bernardo de Castro Cerqueira
-        </p>
-      </footer>
     </div>
   )
 }

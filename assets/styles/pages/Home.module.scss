@@ -11,26 +11,6 @@
   background: url('../../images/home-bg.png') center center / cover no-repeat;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-
-  p {
-    margin: 0;
-  }
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
 .title a {
   color: $brand_color;
   text-decoration: none;
@@ -70,11 +50,12 @@
 }
 
 .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-wrap: wrap;
   max-width: 1200px;
+  width: 100%;
   margin-bottom: 80px;
 }
 

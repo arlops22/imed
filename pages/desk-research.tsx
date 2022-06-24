@@ -18,12 +18,6 @@ const Intro: NextPage = () => {
         </svg>
     )
 
-    const home_icon = (
-        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.58332 19.1667V13.4167H13.4167V19.1667H18.2083V11.5H21.0833L11.5 2.875L1.91666 11.5H4.79166V19.1667H9.58332Z" fill="black"/>
-        </svg>
-    )
-
     return (
         <div className={styles.container}>
             <Head>
@@ -31,43 +25,36 @@ const Intro: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className={styles.main}>
-                <div className="nav-container d-flex flex-column">
-                    <Link href="/">
-                        <a className="back-btn">
-                            {home_icon}
-                            Home
-                        </a>
-                    </Link>
-                    <button className="back-btn" onClick={() => router.back()}>
-                        {back_icon}
-                        Voltar
-                    </button>
-                </div>
-                <h1 className={styles.title}>
-                    Desk Research
-                </h1>
-                <Image
-                    // loader={myLoader}
-                    className={styles.deskImage}
-                    src={deskResearchImg}
-                    alt="Imagem da desk research"
-                    height={650}
-                />
-            </main>
+            <div className="container-fluid">
+                <main className={styles.main}>
+                    <div className="nav-container d-flex flex-column">
+                        <button className="back-btn" onClick={() => router.back()}>
+                            {back_icon}
+                            Voltar
+                        </button>
+                    </div>
+                    <h1 className={styles.title}>
+                        Desk Research
+                    </h1>
+                    <Image
+                        // loader={myLoader}
+                        className={styles.deskImage}
+                        src={deskResearchImg}
+                        alt="Imagem da desk research"
+                        height={650}
+                    />
+                </main>
 
-            <div className={styles.nextPage}>
-                <LinkCard 
-                    title='Análise Competitiva'
-                    link='/analise-competitiva'
-                    fitContent
-                />
+                <div className={styles.nextPage}>
+                    <div>
+                        <LinkCard 
+                            title='Análise Competitiva'
+                            link='/analise-competitiva'
+                            fitContent
+                        />
+                    </div>
+                </div>
             </div>
-            <footer className={styles.footer}>
-                <p>
-                Grupo: Ary de Souza Lopes & Bernardo de Castro Cerqueira
-                </p>
-            </footer>
         </div>
     )
 }

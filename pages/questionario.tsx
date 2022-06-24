@@ -30,12 +30,6 @@ const Intro: NextPage = () => {
         </svg>
     )
 
-    const home_icon = (
-        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.58332 19.1667V13.4167H13.4167V19.1667H18.2083V11.5H21.0833L11.5 2.875L1.91666 11.5H4.79166V19.1667H9.58332Z" fill="black"/>
-        </svg>
-    )
-
     return (
         <div className={styles.container}>
             <Head>
@@ -43,157 +37,150 @@ const Intro: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className={styles.main}>
-                <div className="nav-container d-flex flex-column">
-                    <Link href="/">
-                        <a className="back-btn">
-                            {home_icon}
-                            Home
-                        </a>
-                    </Link>
-                    <button className="back-btn" onClick={() => router.back()}>
-                        {back_icon}
-                        Voltar
-                    </button>
-                </div>
-                <div className="container d-flex align-items-center flex-column text-center">
-                    <h1 className={styles.title}>
-                        Questionário
-                    </h1>
-                    <p className="mb-3">Nesta etapa foi utilizado a estrutura do Google Forms para coletar os dados dos colecionadores e não colecionadores. O formulário foi dividido em seções, onde foram coletados dados demográficos, de experiência no cargo que ocupa e conhecimento do domínio. Logo após, foi estudado sobre as atitudes e valores dos entrevistados, focando inicialmente em informações sobre os remédios e na seção seguinte sobre as farmácias.</p>
+            <div className="container-fluid">
+                <main className={styles.main}>
+                    <div className="nav-container d-flex flex-column">
+                        <button className="back-btn" onClick={() => router.back()}>
+                            {back_icon}
+                            Voltar
+                        </button>
+                    </div>
+                    <div className="container d-flex align-items-center flex-column text-center">
+                        <h1 className={styles.title}>
+                            Questionário
+                        </h1>
+                        <p className="mb-3">Nesta etapa foi utilizado a estrutura do Google Forms para coletar os dados dos colecionadores e não colecionadores. O formulário foi dividido em seções, onde foram coletados dados demográficos, de experiência no cargo que ocupa e conhecimento do domínio. Logo após, foi estudado sobre as atitudes e valores dos entrevistados, focando inicialmente em informações sobre os remédios e na seção seguinte sobre as farmácias.</p>
 
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefbjM_18mOtRA2BBbwFQEPUPBNDjoVktxbutYcxwk4erF1kQ/viewform?embedded=true" width="640" height="850">Carregando…</iframe>
-                
-                    <div className="mt-4 pt-4">
-                        <h2 className='text-center mb-4'>Resultados</h2>
-                        <div className="mb-1 d-flex aign-items-center justify-content-center">
-                            <Image
-                                // loader={myLoader}
-                                className={styles.deskImage}
-                                src={faixaEtariaImg}
-                                height={300}
-                                width={600}
-                            />
-                        </div>
-                        <div className="mb-1 d-flex aign-items-center justify-content-center">
-                            <Image
-                                // loader={myLoader}
-                                className={styles.deskImage}
-                                src={ocupacaoImg}
-                                height={300}
-                                width={600}
-                            />
-                        </div>
-                        <div className="mb-1 d-flex aign-items-center justify-content-center">
-                            <Image
-                                // loader={myLoader}
-                                className={styles.deskImage}
-                                src={deficienciaImg}
-                                height={300}
-                                width={600}
-                            />
-                        </div>
-                        <div className="mb-1 d-flex aign-items-center justify-content-center">
-                            <Image
-                                // loader={myLoader}
-                                className={styles.deskImage}
-                                src={experienciaAppImg}
-                                height={300}
-                                width={600}
-                            />
-                        </div>
-                        <div className="mb-1 d-flex aign-items-center justify-content-center">
-                            <div className="row">
-                                <div className="col-md-6">
-                                    <Image
-                                        // loader={myLoader}
-                                        className={styles.deskImage}
-                                        src={farmaciaInfosImg1}
-                                        height={300}
-                                        width={600}
-                                    />
-                                </div>
-                                <div className="col-md-6">
-                                    <Image
-                                        // loader={myLoader}
-                                        className={styles.deskImage}
-                                        src={farmaciaInfosImg2}
-                                        height={300}
-                                        width={600}
-                                    />
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefbjM_18mOtRA2BBbwFQEPUPBNDjoVktxbutYcxwk4erF1kQ/viewform?embedded=true" width="640" height="850">Carregando…</iframe>
+                    
+                        <div className="mt-4 pt-4">
+                            <h2 className='text-center mb-4'>Resultados</h2>
+                            <div className="mb-1 d-flex aign-items-center justify-content-center">
+                                <Image
+                                    // loader={myLoader}
+                                    className={styles.deskImage}
+                                    src={faixaEtariaImg}
+                                    height={300}
+                                    width={600}
+                                />
+                            </div>
+                            <div className="mb-1 d-flex aign-items-center justify-content-center">
+                                <Image
+                                    // loader={myLoader}
+                                    className={styles.deskImage}
+                                    src={ocupacaoImg}
+                                    height={300}
+                                    width={600}
+                                />
+                            </div>
+                            <div className="mb-1 d-flex aign-items-center justify-content-center">
+                                <Image
+                                    // loader={myLoader}
+                                    className={styles.deskImage}
+                                    src={deficienciaImg}
+                                    height={300}
+                                    width={600}
+                                />
+                            </div>
+                            <div className="mb-1 d-flex aign-items-center justify-content-center">
+                                <Image
+                                    // loader={myLoader}
+                                    className={styles.deskImage}
+                                    src={experienciaAppImg}
+                                    height={300}
+                                    width={600}
+                                />
+                            </div>
+                            <div className="mb-1 d-flex aign-items-center justify-content-center">
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <Image
+                                            // loader={myLoader}
+                                            className={styles.deskImage}
+                                            src={farmaciaInfosImg1}
+                                            height={300}
+                                            width={600}
+                                        />
+                                    </div>
+                                    <div className="col-md-6">
+                                        <Image
+                                            // loader={myLoader}
+                                            className={styles.deskImage}
+                                            src={farmaciaInfosImg2}
+                                            height={300}
+                                            width={600}
+                                        />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="mb-1 d-flex aign-items-center justify-content-center">
-                            <Image
-                                // loader={myLoader}
-                                className={styles.deskImage}
-                                src={costumaComprarImg}
-                                height={300}
-                                width={600}
-                            />
-                        </div>
-                        <div className="mb-1 d-flex aign-items-center justify-content-center">
-                            <Image
-                                // loader={myLoader}
-                                className={styles.deskImage}
-                                src={prescricaoMedicaImg}
-                                height={300}
-                                width={600}
-                            />
-                        </div>
-                        <div className="mb-1 d-flex aign-items-center justify-content-center">
-                            <Image
-                                // loader={myLoader}
-                                className={styles.deskImage}
-                                src={sabeNomeImg}
-                                height={300}
-                                width={600}
-                            />
-                        </div>
-                        <div className="mb-1 d-flex aign-items-center justify-content-center">
-                            <Image
-                                // loader={myLoader}
-                                className={styles.deskImage}
-                                src={sabeNomeJustificativaImg}
-                                height={300}
-                                width={600}
-                            />
-                        </div>
-                        <div className="mb-1 d-flex aign-items-center justify-content-center">
-                            <Image
-                                // loader={myLoader}
-                                className={styles.deskImage}
-                                src={sabeDosagemImg}
-                                height={300}
-                                width={600}
-                            />
-                        </div>
-                        <div className="mb-1 d-flex aign-items-center justify-content-center">
-                            <Image
-                                // loader={myLoader}
-                                className={styles.deskImage}
-                                src={remediosInfoImg}
-                                height={300}
-                                width={600}
-                            />
+                            <div className="mb-1 d-flex aign-items-center justify-content-center">
+                                <Image
+                                    // loader={myLoader}
+                                    className={styles.deskImage}
+                                    src={costumaComprarImg}
+                                    height={300}
+                                    width={600}
+                                />
+                            </div>
+                            <div className="mb-1 d-flex aign-items-center justify-content-center">
+                                <Image
+                                    // loader={myLoader}
+                                    className={styles.deskImage}
+                                    src={prescricaoMedicaImg}
+                                    height={300}
+                                    width={600}
+                                />
+                            </div>
+                            <div className="mb-1 d-flex aign-items-center justify-content-center">
+                                <Image
+                                    // loader={myLoader}
+                                    className={styles.deskImage}
+                                    src={sabeNomeImg}
+                                    height={300}
+                                    width={600}
+                                />
+                            </div>
+                            <div className="mb-1 d-flex aign-items-center justify-content-center">
+                                <Image
+                                    // loader={myLoader}
+                                    className={styles.deskImage}
+                                    src={sabeNomeJustificativaImg}
+                                    height={300}
+                                    width={600}
+                                />
+                            </div>
+                            <div className="mb-1 d-flex aign-items-center justify-content-center">
+                                <Image
+                                    // loader={myLoader}
+                                    className={styles.deskImage}
+                                    src={sabeDosagemImg}
+                                    height={300}
+                                    width={600}
+                                />
+                            </div>
+                            <div className="mb-1 d-flex aign-items-center justify-content-center">
+                                <Image
+                                    // loader={myLoader}
+                                    className={styles.deskImage}
+                                    src={remediosInfoImg}
+                                    height={300}
+                                    width={600}
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
-            </main>
+                </main>
 
-            <div className={styles.nextPage}>
-                <LinkCard 
-                    title='Entrevista'
-                    link='/entrevista'
-                    fitContent
-                />
+                <div className={styles.nextPage}>
+                    <div>
+                        <LinkCard 
+                            title='Entrevista'
+                            link='/entrevista'
+                            fitContent
+                        />
+                    </div>
+                </div>
             </div>
-            <footer className={styles.footer}>
-                <p>
-                    Grupo: Ary de Souza Lopes & Bernardo de Castro Cerqueira
-                </p>
-            </footer>
         </div>
     )
 }

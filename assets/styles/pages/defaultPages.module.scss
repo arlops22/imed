@@ -9,26 +9,6 @@
   padding-top: 100px;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-
-  p {
-    margin: 0;
-  }
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
 .title a {
   color: $brand_color;
   text-decoration: none;
@@ -143,6 +123,10 @@
 .nextPage {
   display: flex;
   justify-content: flex-end;
+
+  > div {
+    max-width: fit-content;
+  }
 
   h2 {
     margin-bottom: 0;
