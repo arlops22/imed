@@ -1,8 +1,67 @@
 @import '../../assets/styles/colors';
 
 .personaContent {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .mainInfo {
+        margin-bottom: 24px;
+        p {
+            margin-bottom: 8px;
+        }
+    }
+
     .slogan {
         font-style: italic;
         text-align: center;
+        margin-top: 24px;
+
+        background-color: rgba($white, .2);
+        padding: 12px;
+        border-radius: 6px;
+    }
+
+    p {
+        margin: 0;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+
+    .objectives {
+        ul {
+            margin-bottom: 16px;
+            list-style: circle;
+            padding-left: 12px;
+
+            li {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .problemContainer {
+        margin-top: 40px;
+        p {
+            margin-bottom: 12px;
+        }
+
+        .tasks {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            margin-left: 16px;
+        }
+
+        .methods {
+            margin-left: 20px;
+        }
+
+        .operator {
+            margin-left: 40px;
+        }
     }
 }

@@ -3,6 +3,12 @@ import React, { ReactElement } from 'react'
 
 import style from './persona-content.module.scss'
 
+
+interface problemScenariumType {
+    problem: string,
+    tasks: any
+}
+
 interface Props {
     image: StaticImageData,
     name: string,
@@ -15,7 +21,7 @@ interface Props {
     objectives: string[],
     abilities: string[],
     frustrations: string[],
-    problemScenarium: string
+    problemScenarium: problemScenariumType[]
 }
 
 const PersonaContent = (props: Props) => {
@@ -26,12 +32,12 @@ const PersonaContent = (props: Props) => {
         <div className={style.personaContent}>
             <div className="row">
                 <div className="col-md-4">
-                    <div>
+                    <div className="d-flex align-items-center flex-column">
                         <Image
                             // loader={myLoader}
                             src={image}
-                            height={300}
-                            width={600}
+                            // height={300}
+                            // width={600}
                         />
                         <p className={style.slogan}>"{slogan}"</p>
                     </div>
@@ -39,68 +45,102 @@ const PersonaContent = (props: Props) => {
                 <div className="col-md-4">
                     <div>
                         <h2>{name}</h2>
-                        <div className="row">
-                            <div className="col-md-4">
-                                <p>Idade:</p>
-                            </div>
-                            <div className="col-md-6">
-                                <p>{age}</p>
-                            </div>
-                            
-                            <div className="col-md-4">
-                                <p>Emprego:</p>
-                            </div>
-                            <div className="col-md-6">
-                                <p>{job}</p>
-                            </div>
-                            
-                            <div className="col-md-4">
-                                <p>Educação:</p>
-                            </div>
-                            <div className="col-md-6">
-                                <p>{education}</p>
-                            </div>
-                            
-                            <div className="col-md-4">
-                                <p>Status Familiar:</p>
-                            </div>
-                            <div className="col-md-6">
-                                <p>{familiarStatus}</p>
+                        <div className={style.mainInfo}>
+                            <div className="row">
+                                <div className="col-md-4">
+                                    <p>Idade:</p>
+                                </div>
+                                <div className="col-md-6">
+                                    <p>{age}</p>
+                                </div>
+                                
+                                <div className="col-md-4">
+                                    <p>Emprego:</p>
+                                </div>
+                                <div className="col-md-6">
+                                    <p>{job}</p>
+                                </div>
+                                
+                                <div className="col-md-4">
+                                    <p>Educação:</p>
+                                </div>
+                                <div className="col-md-6">
+                                    <p>{education}</p>
+                                </div>
+                                
+                                <div className="col-md-4">
+                                    <p>Status Familiar:</p>
+                                </div>
+                                <div className="col-md-6">
+                                    <p>{familiarStatus}</p>
+                                </div>
                             </div>
                         </div>
                         {description}
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <h4>Objetivo</h4>
-                    <ul>
-                        {objectives.map((objective: string) => (
-                            <li>
-                                <p>{objective}</p>
-                            </li>
-                        ))}
-                    </ul>
-                    <h4>Habilidades</h4>
-                    <ul>
-                        {abilities.map((ability: string) => (
-                            <li>
-                                <p>{ability}</p>
-                            </li>
-                        ))}
-                    </ul>
-                    <h4>Frustrações</h4>
-                    <ul>
-                        {frustrations.map((frustration: string) => (
-                            <li>
-                                <p>{frustration}</p>
-                            </li>
-                        ))}
-                    </ul>
+                    <div className={style.objectives}>
+                        <h4>Objetivo</h4>
+                        <ul>
+                            {objectives.map((objective: string) => (
+                                <li>
+                                    <p>{objective}</p>
+                                </li>
+                            ))}
+                        </ul>
+                        <h4>Habilidades</h4>
+                        <ul>
+                            {abilities.map((ability: string) => (
+                                <li>
+                                    <p>{ability}</p>
+                                </li>
+                            ))}
+                        </ul>
+                        <h4>Frustrações</h4>
+                        <ul>
+                            {frustrations.map((frustration: string) => (
+                                <li>
+                                    <p>{frustration}</p>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div className="col-md-8">
-                <h3>Cenário Problema</h3>
-                <p>{problemScenarium}</p>
+                <div className={style.problemContainer}>
+                    {problemScenarium.map((scenarium, index) => (
+                        <>
+                            <h3>Cenário Problema {index + 1}</h3>
+                            <p>{scenarium.problem}</p>
+
+                            <h3>Tarefas</h3>
+                            <div className={style.tasks}>
+                                {scenarium.tasks.map((task: any, index: number) => (
+                                    <>
+                                        <p><strong>Objetivo {index + 1}:</strong> {task.objective}</p>
+                                        <ul className={style.methods}>
+                                            {task.methods.map((method: any, index: number) => (
+                                                <>
+                                                    <p><strong>Método {index + 1}:</strong> {method.name}</p>
+                                                    <ul className={style.operator}>
+                                                        {method.operators.map((operator: any, index: number) => (
+                                                            <>
+                                                                <p><strong>Operador {index + 1}:</strong></p>
+                                                                <p>{operator}</p>
+                                                            </>
+                                                        ))}
+                                                    </ul>
+                                                </>
+                                            ))}
+                                        </ul>
+                                    </>
+                                ))}
+                            </div>
+                        </>
+                    ))}
+                </div>
             </div>
         </div>
     )
