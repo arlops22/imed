@@ -83,24 +83,24 @@ const PersonaContent = (props: Props) => {
                     <div className={style.objectives}>
                         <h4>Objetivo</h4>
                         <ul>
-                            {objectives.map((objective: string) => (
-                                <li>
+                            {objectives.map((objective: string, index: number) => (
+                                <li key={`objective-${index}`}>
                                     <p>{objective}</p>
                                 </li>
                             ))}
                         </ul>
                         <h4>Habilidades</h4>
                         <ul>
-                            {abilities.map((ability: string) => (
-                                <li>
+                            {abilities.map((ability: string, index: number) => (
+                                <li key={`ability-${index}`}>
                                     <p>{ability}</p>
                                 </li>
                             ))}
                         </ul>
                         <h4>Frustrações</h4>
                         <ul>
-                            {frustrations.map((frustration: string) => (
-                                <li>
+                            {frustrations.map((frustration: string, index: number) => (
+                                <li key={`frustration-${index}`}>
                                     <p>{frustration}</p>
                                 </li>
                             ))}
