@@ -7,6 +7,15 @@
     justify-content: center;
     flex-direction: column;
 
+    a {
+        font-size: 14px;
+        transition: .2s;
+
+        &:hover {
+            color: $brand_color;
+        }
+    }
+
     .mainInfo {
         margin-bottom: 24px;
         p {
@@ -17,15 +26,18 @@
     .slogan {
         font-style: italic;
         text-align: center;
+        margin: 0 48px;
         margin-top: 24px;
 
         background-color: rgba($white, .2);
-        padding: 12px;
+        padding: 12px 32px;
         border-radius: 6px;
+        font-size: 12px;
     }
 
     p {
         margin: 0;
+        font-size: 14px;
     }
     
     h4 {

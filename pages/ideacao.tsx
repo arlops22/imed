@@ -26,14 +26,14 @@ const Ideacao: NextPage = () => {
                 <div className="col-md-4">
                     <LinkCard 
                         title='Personas e Cenários'
-                        description=''
+                        description='Representação e análise das possíveis personalidades de usuário e seus problemas'
                         link='/personas-cenarios'
                     />
                 </div>
                 <div className="col-md-4">
                     <LinkCard 
                         title='Prototipação'
-                        description=''
+                        description='Criação do design para solucionar os problemas existentes das personas'
                         link='/prototipacao'
                     />
                 </div>

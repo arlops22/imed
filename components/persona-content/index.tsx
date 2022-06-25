@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from 'next/image'
+import Link from 'next/link'
 import React, { ReactElement } from 'react'
 
 import style from './persona-content.module.scss'
@@ -115,7 +116,10 @@ const PersonaContent = (props: Props) => {
                             <h3>Cenário Problema {index + 1}</h3>
                             <p>{scenarium.problem}</p>
 
-                            <h3>Tarefas</h3>
+                            <div className="d-flex align-items-center justify-content-between">
+                                <h3>Tarefas</h3>
+                                <Link href='/prototipacao'><a>Ver Protótipo</a></Link>
+                            </div>
                             <div className={style.tasks}>
                                 {scenarium.tasks.map((task: any, index: number) => (
                                     <>
@@ -128,7 +132,7 @@ const PersonaContent = (props: Props) => {
                                                         {method.operators.map((operator: any, index: number) => (
                                                             <>
                                                                 <p><strong>Operador {index + 1}:</strong></p>
-                                                                <p>{operator}</p>
+                                                                <p style={{marginLeft: '20px'}}>- {operator}</p>
                                                             </>
                                                         ))}
                                                     </ul>
