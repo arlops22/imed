@@ -78,9 +78,19 @@ const Intro: NextPage = () => {
                                             {
                                                 name: 'Utilizar a aba de simulação do aplicativo',
                                                 operators: [
-                                                    'clicar na aba de simulação no menu de baixo',
+                                                    'navegar para a tela de busca no menu de navegação',
                                                     'digitar nome do remédio',
-                                                    'encontra o mesmo remédio em diferentes farmácias'
+                                                    'clicar no botão de filtro',
+                                                    'selecionar filtro de menor preço',
+                                                    'aplicar filtro',
+                                                    'visualizar resultado e decidir qual produto deseja',
+                                                    'clicar no produto',
+                                                    'clicar no botão de "adicionar em simulação"',
+                                                    'voltar para lista de remédios filtrados',
+                                                    'continuar escolhendo outros remédios e fazendo o mesmo processo',
+                                                    'navegar para a tela de "Simulação" no menu de navegação',
+                                                    'visualizar resultados',
+                                                    'selecionar resultado que orçamento é mais barato e tem localização próxima'
                                                 ]
                                             },
                                         ]
@@ -89,10 +99,12 @@ const Intro: NextPage = () => {
                                         objective: 'encontrar as farmácias próximas',
                                         methods: [
                                             {
-                                                name: 'Utilizar seção de “Farmácias mais próximas” no aplicativo',
+                                                name: 'Utilizar seção de “Farmácias mais próximas” na Home',
                                                 operators: [
-                                                    'Visualizar farmácias da seção de atalho "Farmácias mais próximas"',
-                                                    'Clicar na farmácia desejada'
+                                                    'visualizar farmácias da seção de atalho "Farmácias mais próximas"',
+                                                    'clicar na farmácia desejada',
+                                                    'visualizar informações da farmácia',
+                                                    'buscar remédio que deseja comprar'
                                                 ]
                                             },
                                         ]
@@ -137,22 +149,19 @@ const Intro: NextPage = () => {
                                         objective: 'encontrar o nome do remédio que não consegue se lembrar',
                                         methods: [
                                             {
-                                                name: 'Utilizar aba de últimas compras',
+                                                name: 'Utilizar seção de histórico de pedidos da Home',
                                                 operators: [
-                                                    'clicar no filtro',
-                                                    'escolher o filtro de estacionamento próximo',
-                                                    'clicar na farmácia que está mais perto',
-                                                    'ver o seu endereço nas informações'
+                                                    'scrollar tela até seção de "Histórico de pedidos"',
+                                                    'verificar se remédio que busca está na seção',
+                                                    'clicar no remédio e fazer compra'
                                                 ]
                                             },
                                             {
-                                                name: 'Procurar pelos filtros de remédio',
+                                                name: 'Utilizar histórico de pedidos na tela de Pedidos',
                                                 operators: [
-                                                    'clicar na barra de pesquisa de buscar remédios',
-                                                    'clicar em filtros',
-                                                    'escolher os filtros desejados',
-                                                    'clicar em ver resultados',
-                                                    'ir scrollando a tela até encontrar o remédio desejado'
+                                                    'navegar para tela de "Pedidos" no menu de navegação',
+                                                    'visualizar resultados e histórico de pedidos',
+                                                    'clicar em comprar produto desejado',
                                                 ]
                                             }
                                         ]
@@ -166,47 +175,24 @@ const Intro: NextPage = () => {
                                         objective: 'comprar remédio sem ter problema na entrega.',
                                         methods: [
                                             {
-                                                name: 'Verificar a análise dos usuários da farmácia que irá comprar',
+                                                name: 'Verificar a avaliação dos usuários da farmácia que irá comprar',
                                                 operators: [
                                                     'clicar na lupa na barra de navegação',
                                                     'digitar o nome do remédio na barra',
                                                     'clicar no remédio desejado',
-                                                    'clicar na farmácia',
-                                                    'clicar nas avaliações'
+                                                    'visualizar página de detalhe do remédio',
+                                                    'clicar no nome da farmácia',
+                                                    'visualizar página de detalhe da farmácia',
+                                                    'clicar na nota de avaliações da farmácia',
+                                                    'visualizar resultados de avaliações e procurar sobre as informações que deseja'
                                                 ]
                                             },
                                             {
                                                 name: 'Utilizar a função de gps em tempo real do entregador',
                                                 operators: [
-                                                    'entrar na aba de pedidos pelo menu de navegação',
-                                                    'clicar no pedido em andamento'
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                problem: "Ana está voltando de uma festa de aniversário com a sua avó. Lembra que precisa passar na farmácia para comprar os remédios que estão faltando em casa. Sabendo disso, ela para em uma farmácia e, para não deixar sua avó sozinha no carro, acaba levando-a para a farmácia junto, porém, no momento que chega, ela percebe que a única maneira de acessar a farmácia é por uma escada. Percebe assim, que sua avó não poderá entrar devido ao seu problema na perna. Tristes pelo fato da farmácia não ter uma rampa na entrada, as duas voltam para o carro para procurar outro lugar que tenha.",
-                                tasks: [
-                                    {
-                                        objective: 'procurar o endereço de uma farmácia que tenha acessibilidade',
-                                        methods: [
-                                            {
-                                                name: 'Utilizar filtros de farmácia do aplicativo',
-                                                operators: [
-                                                    'clicar no “ver mais” nas farmácias próximas',
-                                                    'clicar no filtro',
-                                                    'escolher o filtro de acessibilidade',
-                                                    'clicar na farmácia que está mais perto',
-                                                    'ver o seu endereço nas informações'
-                                                ]
-                                            },
-                                            {
-                                                name: 'Utilizar a função de gps em tempo real do entregador',
-                                                operators: [
-                                                    'entrar na aba de pedidos pelo menu de navegação',
-                                                    'clicar no pedido em andamento'
+                                                    'navegar para tela de "Pedidos" no menu de navegação',
+                                                    'clicar em "ver detalhe" de pedido em andamento',
+                                                    'visualizar gps com localização do entregador'
                                                 ]
                                             }
                                         ]
@@ -253,17 +239,20 @@ const Intro: NextPage = () => {
                                             {
                                                 name: 'Utilizar a função de recomendados da home do aplicativo',
                                                 operators: [
-                                                    'scrollar para o lado na seção de recomendados até encontrar algo'
+                                                    'scrollar página até encontrar seção de recomendados',
+                                                    'clicar em uma opção de remédio',
+                                                    'visualizar tela de detalhe do remédio',
+                                                    'ler descrição do remédio e verificar categoria'
                                                 ]
                                             },
                                             {
                                                 name: 'Utilizar a categoria de dor e febre do aplicativo',
                                                 operators: [
-                                                    'clicar na barra de pesquisa de buscar remédio',
+                                                    'navegar para a tela de "Busca" no menu de navegação',
                                                     'clicar em filtro',
                                                     'escolher a categoria de dor e febre',
-                                                    'clicar em ver resultados',
-                                                    'scrollar até escolher o remédio'
+                                                    'visualizar resultados de busca',
+                                                    'escolher o remédio que deseja'
                                                 ]
                                             }
                                         ]
@@ -277,12 +266,16 @@ const Intro: NextPage = () => {
                                         objective: 'encontrar o endereço de uma farmácia que tenha estacionamento próximo.',
                                         methods: [
                                             {
-                                                name: 'Utilizar a função de filtros da aba de farmácia',
+                                                name: 'Utilizar a função de filtros na lista de farmácias',
                                                 operators: [
-                                                    'clicar no “ver mais” nas farmácias próximas',
-                                                    'clicar no filtro',
+                                                    'clicar no “ver mais” nas farmácias próximas da Home',
+                                                    'clicar no botão de filtro',
                                                     'escolher o filtro de estacionamento próximo',
-                                                    'clicar na farmácia que está mais perto'
+                                                    'verificar resultados da busca',
+                                                    'clicar na farmácia que deseja',
+                                                    'visualizar tela do detalhe da farmácia',
+                                                    'verificar seção de estacionamentos próximos',
+                                                    'verificar opções de estacionamento no mapa disponível'
                                                 ]
                                             },
                                         ]
