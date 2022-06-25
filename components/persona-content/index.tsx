@@ -39,7 +39,7 @@ const PersonaContent = (props: Props) => {
                             // height={300}
                             // width={600}
                         />
-                        <p className={style.slogan}>"{slogan}"</p>
+                        <p className={style.slogan}>{slogan}</p>
                     </div>
                 </div>
                 <div className="col-md-4">
