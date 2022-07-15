@@ -39,8 +39,8 @@ const Home: NextPage = () => {
             <div className="col-md-4">
             <LinkCard 
               title='Avaliação'
-              description='Em breve.'
-              link='/'
+              description='Comparação da situação anterior com a nova.'
+              link='/avaliacao'
             />
             </div>
           </div>
