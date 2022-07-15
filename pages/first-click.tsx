@@ -49,7 +49,7 @@ const FirstClick: NextPage = () => {
 
                                 <p><strong>Pergunta: </strong>Suponha que você já tenha comprado um remédio nesse aplicativo. Outro dia depois de muito tempo vai fazer o mesmo pedido mas esqueceu o nome do remédio. Qual é o primeiro lugar onde você irá clicar?</p>
 
-                                <Image src={FirstClick1} />
+                                <Image src={FirstClick1} alt='Imagem de First Click' />
                                 
                                 <p className="mt-3 pb-5 border-bottom">Pelo resultado que obtivemos dessa pergunta, conseguimos observar que a grande maioria dos usuários obtiveram sucesso na tarefa. Portanto, decidimos não sugerir nenhum redesign à essa tela.</p>
 
@@ -63,14 +63,14 @@ const FirstClick: NextPage = () => {
 
                                 <p><strong>Pergunta: </strong>Suponha que você precisa comprar um remédio prescrito pelo seu médico e necessita ir para uma farmácia que seja próxima ou que tenha estacionamento caso deseje. Onde você clicaria para resolver seu problema?</p>
 
-                                <Image src={FirstClick3} />
+                                <Image src={FirstClick3} alt='Imagem de First Click' />
 
                                 <p className="mt-3 pb-5 border-bottom">Pelo resultado que obtivemos dessa pergunta, também conseguimos observar que a grande maioria dos usuários obtiveram sucesso na tarefa. Porém notamos que houveram alguns cliques fora do botão de "Ver mais" do card da farmácia, sendo assim, seria interessante que ele por inteiro fosse um botão.</p>
 
 
                                 <p><strong>Pergunta: </strong>Suponha que você acorda com muito mal estar ou dores no corpo e precisa comprar um remédio, mas não sabe qual. Onde você clicaria para resolver seu problema?</p>
 
-                                <Image src={FirstClick4} />
+                                <Image src={FirstClick4} alt='Imagem de First Click' />
 
                                 <p className="mt-3">Em relação aos resultados atrelados a essa pergunta, observamos que muitos usuários clicaram no card da farmácia, que poderia ser uma alternativa para solucionar o problema, porém a ideia central da interação seria o usuário ir diretamente para página de pesquisa para facilitar a busca pelo remédio. Dessa maneira, a sugestão de redesign nessa questão seria adicionar um atalho para a página de pesquisa logo no início da home, o que chamaria mais atenção dos usuários e disponibilizaria mais uma forma de se chegar na página.</p>
                             </div>

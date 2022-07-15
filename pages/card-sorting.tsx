@@ -44,8 +44,8 @@ const FirstClick: NextPage = () => {
                                 <p className="pb-5">Para realizar a atividade utilizamos o Optimal Workshop que disponibiliza uma ferramenta que realiza o Card Sorting. Criamos vinte cards e seis categorias, iniciamos um estudo no site e enviamos para usuários selecionados baseados em nossas personas. E então, eles fizeram o teste.</p>
 
                                 <div className="d-flex align-items-center">
-                                    <Image className="me-4" src={CardSort1} />
-                                    <Image src={CardSort2} />
+                                    <Image alt='Imagem de Card Sorting' className="me-4" src={CardSort1} />
+                                    <Image alt='Imagem de Card Sorting' src={CardSort2} />
                                 </div>
 
                                 <p className="mt-4">Esse teste mostrou que, no geral, a prototipação está de acordo com o que os usuários imaginaram na hora de escolher a categoria para cada card. Mas é importante analisar que houveram algumas escolhas frequentes feitas pelos usuários que podem nos ajudar a adquirir algumas noções de redesign do nosso protótipo. São elas:</p>
