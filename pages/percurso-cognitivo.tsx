@@ -51,8 +51,8 @@ const FirstClick: NextPage = () => {
 
                                 <div className="my-3">
                                     <h3>Sugestões de Redesign</h3>
-                                    <p>Na tarefa 1 de "Utilizar histórico de pedidos na tela de Pedidos", foi entendido que a sugestão encontrada para o problema demonstrado foi a inserção de um filtro na página de pedidos para o usuário encontrar o pedido que busca de forma mais fácil.</p>
-                                    <p>Já na tarefa 2 de "Utilizar a função de gps em tempo real do entregador", foi entendido que a sugestão encontrada para o problema demonstrado é a inserção de um campo com as informações do entregador do produto.</p>
+                                    <p>Na tarefa 1 de 'Utilizar histórico de pedidos na tela de Pedidos', foi entendido que a sugestão encontrada para o problema demonstrado foi a inserção de um filtro na página de pedidos para o usuário encontrar o pedido que busca de forma mais fácil.</p>
+                                    <p>Já na tarefa 2 de 'Utilizar a função de gps em tempo real do entregador', foi entendido que a sugestão encontrada para o problema demonstrado é a inserção de um campo com as informações do entregador do produto.</p>
                                 </div>
 
                                 <div className="mb-2 w-100">
@@ -61,8 +61,8 @@ const FirstClick: NextPage = () => {
 
                                 <div className="my-3">
                                     <h3>Sugestões de Redesign</h3>
-                                    <p>Na tarefa 1 de "Comprar um remédio sem saber o nome", foi entendido que a sugestão encontrada para o problema demonstrado foi a inserção títulos para cada seção do detalhe do produto, para que o usuário consiga entender e diferenciar cada conteúdo presente.</p>
-                                    <p>Já na tarefa 2 de "Encontrar o endereço de uma farmácia que tenha estacionamento próximo", foi entendido que o fluxo funcionou bem, porém apenas um problema foi encontrado e a sugestão para melhorar ele é a inserção de um atalho logo no início da tela da Home.</p>
+                                    <p>Na tarefa 1 de 'Comprar um remédio sem saber o nome', foi entendido que a sugestão encontrada para o problema demonstrado foi a inserção títulos para cada seção do detalhe do produto, para que o usuário consiga entender e diferenciar cada conteúdo presente.</p>
+                                    <p>Já na tarefa 2 de 'Encontrar o endereço de uma farmácia que tenha estacionamento próximo', foi entendido que o fluxo funcionou bem, porém apenas um problema foi encontrado e a sugestão para melhorar ele é a inserção de um atalho logo no início da tela da Home.</p>
                                 </div>
                             </div>
                         </main>
