@@ -26,6 +26,11 @@ const Header = () => {
                     <a>Ideação</a>
                 </Link>
             </li>
+            <li>
+                <Link href='/avaliacao'>
+                    <a>Avaliação</a>
+                </Link>
+            </li>
         </ul>
     </div>
   )
