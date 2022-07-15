@@ -58,14 +58,14 @@ const FirstClick: NextPage = () => {
 
                                 <Image alt="" src={FirstClick2} />
 
-                                <p className="mt-3 pb-5 border-bottom">Em relação aos resultados atrelados a essa pergunta, observamos que o nosso botão de "Simulação" foi o menos escolhido dos resultados. Porém, nossa intenção é de que ele se torne o mais escolhido, pois é a função que, na nossa visão, mais ajudaria o usuário a verificar os preços e adquirir o remédio com o preço mais barato possível. Nosso objetivo de redesign em relação a isso seria criar algum pop-up para destacar a utilidade que tem esse botão, para que assim, os usuários fiquem cientes dele.</p>
+                                <p className="mt-3 pb-5 border-bottom">Em relação aos resultados atrelados a essa pergunta, observamos que o nosso botão de &quot;Simulação&ldquo; foi o menos escolhido dos resultados. Porém, nossa intenção é de que ele se torne o mais escolhido, pois é a função que, na nossa visão, mais ajudaria o usuário a verificar os preços e adquirir o remédio com o preço mais barato possível. Nosso objetivo de redesign em relação a isso seria criar algum pop-up para destacar a utilidade que tem esse botão, para que assim, os usuários fiquem cientes dele.</p>
 
 
                                 <p><strong>Pergunta: </strong>Suponha que você precisa comprar um remédio prescrito pelo seu médico e necessita ir para uma farmácia que seja próxima ou que tenha estacionamento caso deseje. Onde você clicaria para resolver seu problema?</p>
 
                                 <Image src={FirstClick3} alt='Imagem de First Click' />
 
-                                <p className="mt-3 pb-5 border-bottom">Pelo resultado que obtivemos dessa pergunta, também conseguimos observar que a grande maioria dos usuários obtiveram sucesso na tarefa. Porém notamos que houveram alguns cliques fora do botão de "Ver mais" do card da farmácia, sendo assim, seria interessante que ele por inteiro fosse um botão.</p>
+                                <p className="mt-3 pb-5 border-bottom">Pelo resultado que obtivemos dessa pergunta, também conseguimos observar que a grande maioria dos usuários obtiveram sucesso na tarefa. Porém notamos que houveram alguns cliques fora do botão de 'Ver mais' do card da farmácia, sendo assim, seria interessante que ele por inteiro fosse um botão.</p>
 
 
                                 <p><strong>Pergunta: </strong>Suponha que você acorda com muito mal estar ou dores no corpo e precisa comprar um remédio, mas não sabe qual. Onde você clicaria para resolver seu problema?</p>
