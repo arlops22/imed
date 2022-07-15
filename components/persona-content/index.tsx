@@ -39,6 +39,7 @@ const PersonaContent = (props: Props) => {
                             src={image}
                             // height={300}
                             // width={600}
+                            alt=""
                         />
                         <p className={style.slogan}>{slogan}</p>
                     </div>

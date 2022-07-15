@@ -62,6 +62,7 @@ const Intro: NextPage = () => {
                                     src={faixaEtariaImg}
                                     height={300}
                                     width={600}
+                                    alt=""
                                 />
                             </div>
                             <div className="mb-1 d-flex aign-items-center justify-content-center">
@@ -71,6 +72,7 @@ const Intro: NextPage = () => {
                                     src={ocupacaoImg}
                                     height={300}
                                     width={600}
+                                    alt=""
                                 />
                             </div>
                             <div className="mb-1 d-flex aign-items-center justify-content-center">
@@ -80,6 +82,7 @@ const Intro: NextPage = () => {
                                     src={deficienciaImg}
                                     height={300}
                                     width={600}
+                                    alt=""
                                 />
                             </div>
                             <div className="mb-1 d-flex aign-items-center justify-content-center">
@@ -89,6 +92,7 @@ const Intro: NextPage = () => {
                                     src={experienciaAppImg}
                                     height={300}
                                     width={600}
+                                    alt=""
                                 />
                             </div>
                             <div className="mb-1 d-flex aign-items-center justify-content-center">
@@ -100,6 +104,7 @@ const Intro: NextPage = () => {
                                             src={farmaciaInfosImg1}
                                             height={300}
                                             width={600}
+                                            alt=""
                                         />
                                     </div>
                                     <div className="col-md-6">
@@ -109,6 +114,7 @@ const Intro: NextPage = () => {
                                             src={farmaciaInfosImg2}
                                             height={300}
                                             width={600}
+                                            alt=""
                                         />
                                     </div>
                                 </div>
@@ -120,6 +126,7 @@ const Intro: NextPage = () => {
                                     src={costumaComprarImg}
                                     height={300}
                                     width={600}
+                                    alt=""
                                 />
                             </div>
                             <div className="mb-1 d-flex aign-items-center justify-content-center">
@@ -129,6 +136,7 @@ const Intro: NextPage = () => {
                                     src={prescricaoMedicaImg}
                                     height={300}
                                     width={600}
+                                    alt=""
                                 />
                             </div>
                             <div className="mb-1 d-flex aign-items-center justify-content-center">
@@ -138,6 +146,7 @@ const Intro: NextPage = () => {
                                     src={sabeNomeImg}
                                     height={300}
                                     width={600}
+                                    alt=""
                                 />
                             </div>
                             <div className="mb-1 d-flex aign-items-center justify-content-center">
@@ -147,6 +156,7 @@ const Intro: NextPage = () => {
                                     src={sabeNomeJustificativaImg}
                                     height={300}
                                     width={600}
+                                    alt=""
                                 />
                             </div>
                             <div className="mb-1 d-flex aign-items-center justify-content-center">
@@ -156,6 +166,7 @@ const Intro: NextPage = () => {
                                     src={sabeDosagemImg}
                                     height={300}
                                     width={600}
+                                    alt=""
                                 />
                             </div>
                             <div className="mb-1 d-flex aign-items-center justify-content-center">
@@ -165,6 +176,7 @@ const Intro: NextPage = () => {
                                     src={remediosInfoImg}
                                     height={300}
                                     width={600}
+                                    alt=""
                                 />
                             </div>
                         </div>

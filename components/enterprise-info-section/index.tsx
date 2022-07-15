@@ -25,6 +25,7 @@ const EnterpriseInfoSection = (props: EnterpriseInfoSectionProps) => {
                     height={300}
                     width={400}
                     className={styles.logoImg}
+                    alt=""
                 />
             }
             <div className={styles.infoContent}>
@@ -45,6 +46,7 @@ const EnterpriseInfoSection = (props: EnterpriseInfoSectionProps) => {
                         className={styles.appImage}
                         height={400}
                         width={200}
+                        alt=""
                     />
                 </div>
             }
