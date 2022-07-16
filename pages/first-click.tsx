@@ -58,7 +58,7 @@ const FirstClick: NextPage = () => {
 
                                 <Image alt="" src={FirstClick2} />
 
-                                <p className="mt-3 pb-5 border-bottom">Em relação aos resultados atrelados a essa pergunta, observamos que o nosso botão de &quot;Simulação&ldquo; foi o menos escolhido dos resultados. Porém, nossa intenção é de que ele se torne o mais escolhido, pois é a função que, na nossa visão, mais ajudaria o usuário a verificar os preços e adquirir o remédio com o preço mais barato possível. Nosso objetivo de redesign em relação a isso seria criar algum pop-up para destacar a utilidade que tem esse botão, para que assim, os usuários fiquem cientes dele.</p>
+                                <p className="mt-3 pb-5 border-bottom">Em relação aos resultados atrelados a essa pergunta, observamos que o nosso botão de "Simulação" foi o menos escolhido dos resultados. Porém, nossa intenção é de que ele se torne o mais escolhido, pois é a função que, na nossa visão, mais ajudaria o usuário a verificar os preços e adquirir o remédio com o preço mais barato possível. Nosso objetivo de redesign em relação a isso seria criar algum pop-up para destacar a utilidade que tem esse botão, para que assim, os usuários fiquem cientes dele.</p>
 
 
                                 <p><strong>Pergunta: </strong>Suponha que você precisa comprar um remédio prescrito pelo seu médico e necessita ir para uma farmácia que seja próxima ou que tenha estacionamento caso deseje. Onde você clicaria para resolver seu problema?</p>
