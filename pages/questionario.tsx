@@ -49,7 +49,7 @@ const Intro: NextPage = () => {
                         <h1 className={styles.title}>
                             Questionário
                         </h1>
-                        <p className="mb-3">Nesta etapa foi utilizado a estrutura do Google Forms para coletar os dados dos colecionadores e não colecionadores. O formulário foi dividido em seções, onde foram coletados dados demográficos, de experiência no cargo que ocupa e conhecimento do domínio. Logo após, foi estudado sobre as atitudes e valores dos entrevistados, focando inicialmente em informações sobre os remédios e na seção seguinte sobre as farmácias.</p>
+                        <p className="mb-3">Nesta etapa foi utilizado a estrutura do Google Forms para coletar os dados dos particiátes. O formulário foi dividido em seções, onde foram coletados dados demográficos, de experiência no cargo que ocupa e conhecimento do domínio. Logo após, foi estudado sobre as atitudes e valores dos entrevistados, focando inicialmente em informações sobre os remédios e na seção seguinte sobre as farmácias.</p>
 
                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefbjM_18mOtRA2BBbwFQEPUPBNDjoVktxbutYcxwk4erF1kQ/viewform?embedded=true" width="640" height="850">Carregando…</iframe>
                     
